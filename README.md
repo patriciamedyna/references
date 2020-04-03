@@ -18,3 +18,11 @@ where
 * C: one key word from the title of the paper, e.g. "DeepLearning", "LSTM".
 * D: Acronym of the conference or journal where this was published, e.g. "CVPR", "arXiv".
 * E: Publication year.
+
+**Summarising each reference**
+This is based on Vinicius' strategy. For each paper that you read, please write a little LaTeX file (with a couble of paragraphs) with the same code as the bib entry, for instance, name it A_B_C_D_E.tex (following the convention above). In this file, please write the following:
+* The first sentence tells very briefly what was proposed by the authors (cite the paper with \cite{A_B_C_D_E}).
+* The second sentence should mention the problem at hand and what motivated the proposed method.
+* Write between 2 and 4 sentences about the steps of the proposed method.
+* Write 1 or 2 sentences about the experiments and results, including the dataset and some (quantitative and/or qualitative) relevant results. 
+* Finish by discussing the pontential next steps, i.e., how can the method be applied (in ways that have not yet been exploited by the authors) or what can be improved.
