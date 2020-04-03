@@ -1,6 +1,8 @@
 Publication repository whose main goal is the keep all references used by KnEDLe Project members.
 
-**Please check your BIB entries**. 
+# Instructions for the bib file
+
+**Please check your BIB entries**
 
 Entries generated automatically at **Google Scholar usually have mistakes**, such as:
 * Bad entry type, e.g. a technical report is in the form of "@Article" instead of "@TechReport", papers in conferences included as "@Miscelaneous" instead of "@InProceedings", etc.
@@ -19,7 +21,8 @@ where
 * D: Acronym of the conference or journal where this was published, e.g. "CVPR", "arXiv".
 * E: Publication year.
 
-**Summarising each reference**
+# Summarising each reference
+
 This is based on Vinicius' strategy. For each paper that you read, please write a little LaTeX file (with a couble of paragraphs) with the same code as the bib entry, for instance, name it A_B_C_D_E.tex (following the convention above). In this file, please write the following:
 * The first sentence tells very briefly what was proposed by the authors (cite the paper with \cite{A_B_C_D_E}).
 * The second sentence should mention the problem at hand and what motivated the proposed method.
