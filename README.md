@@ -31,5 +31,5 @@ This is based on Vinicius' strategy. For each paper that you read, please write 
 * Finish by discussing the pontential next steps, i.e., how can the method be applied (in ways that have not yet been exploited by the authors) or what can be improved.
 
 ## Examples
-* [Pedro's "broad and shallow" review @GitLab](https://gitlab.com/UnBVision/master-thesis/-/tree/master/papers/paper-readings-and-impressions). This works very well if your focus is on reading and cataloguing a large number of papers.
+* [Pedro's "broad and shallow" review @GitLab](https://gitlab.com/UnBVision/master-thesis/-/tree/master/papers/paper-readings-and-impressions). This works very well if your focus is on reading and cataloguing a large number of papers. Note: his repository is private, but it's worth asking Pedro for access.
 * [Fred's templat for "deep" summaries of papers, here in directory `paper_review_template`](paper_review_template)
