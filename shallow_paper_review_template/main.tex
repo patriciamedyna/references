@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{dirtytalk}
+
+\newcommand{\paper}[7]{
+    \subsection{#1}
+    \begin{itemize}
+        \item Available at: #2
+        \item Where: #3
+        \item What: #4
+        \item How: #5
+        \item Why: #6
+        \item Questions and observations: #7
+    \end{itemize}
+    }
+
+\begin{document}
+\title{Read Papers}
+\author{Pedro Henrique Luz de Araujo}
+\date{\today}
+\maketitle
+\tableofcontents
+
+\section{Preliminar papers}
+\subsection{Deep contextualized word representations}
+\begin{itemize}
+    \item Available at: \url{https://aclweb.org/anthology/N18-1202}~\cite{elmo}
+    \item Where: Allen Institute for AI
+    \item What: Propose word embeddings (ELMo) that model word uses across different contexts. ELMo embeddings improved SOTA on many NLP tasks.
+    \item How: Pretraining a bi-LSTM Language Model. Word embeddings are linear combinations of the vectors stacked above each input word for each end task. Intrinsic evaluation show that lower-level LSTM states encode aspects of syntax while higher-level ones capture context-dependent word meanings. The model also captures subword information through character convolutions.
+    \item Why: Traditional word embeddings only allow a single context-independent representation for each word.
+    \item Questions and observations:
+        \begin{itemize}
+            \item Why only character input? Maybe because no OOV tokens.
+            \item Has it been compared to ULMFiT?
+            \item Drastic reduction of number of epochs needed: ``For example,
+            the SRL model reaches a maximum development
+            F1 after 486 epochs of training without
+            ELMo. After adding ELMo, the model exceeds
+            the baseline maximum at epoch 10''. Also reduces the number of training samples needed.
+        \end{itemize}
+\end{itemize}
+
+
+
+\section{Entity Linking}
+
+\paper
+{Investigating Entity Knowledge in BERT with Simple Neural End-To-End
+Entity Linking}
+{\url{https://www.aclweb.org/anthology/K19-1063.pdf}~\cite{bertEL}}
+{University of Mannheim, Germany}
+{An end-to-end neural entity linking system that jointly performs entity detection, candidate generation and entity disambiguation.}
+{Training BERT on a automatically generated dataset from Wikipedia where the entities are wikipedia articles and the labels are obtained through wikipedia links.}
+{Jointly learning all three entity linking steps.}
+{\begin{itemize}
+    \item Good references for entity linking.
+    \item 42 days of training with 2 GPUs!
+\end{itemize}}
+
+
+\bibliographystyle{ieeetr}
+\bibliography{mybib}
+\end{document}
